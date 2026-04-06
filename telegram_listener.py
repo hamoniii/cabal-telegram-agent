@@ -69,3 +69,10 @@ message:
 
 client.start()
 client.run_until_disconnected()
+print("starting telegram client...")
+
+client.start(phone=lambda: input("ENTER YOUR PHONE NUMBER: "))
+
+print("telegram connected")
+
+client.run_until_disconnected()
